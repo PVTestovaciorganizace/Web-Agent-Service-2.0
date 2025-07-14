@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Testing Service</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .center {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .chat-window {
+            background: #222;
+            border-radius: 10px;
+            padding: 24px;
+            width: 350px;
+            box-shadow: 0 0 10px #111;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .chat-input {
+            margin-top: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 20px 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="title">Welcome to our Agent Testing Service</div>
+        <div class="chat-window">
+            <label for="prompt">Prompt:</label>
+            <input type="text" id="prompt" class="chat-input" placeholder="Type your prompt here...">
+        </div>
+    </div>
+    <footer>
+        <img src="redline.png" alt="Red Line" width="1200" height="20">
+    </footer>
+</body>
+</html>
